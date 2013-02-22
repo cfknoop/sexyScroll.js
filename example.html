@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+<script src="jquery.sexyScroll-1.0.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+	
+	jQuery('.scrollup').sexyScroll();
+	
+	/*
+	jQuery('.scrollup').sexyScroll({
+		visibleStart:  100,
+		bottomOffset: 300,
+		position: 10
+	});	
+	*/
+	
+});
+</script>
+
+<style type="text/css">
+*{margin:0;padding:0;}
+
+#header{
+	background:gray;
+	height:100px;
+	margin-bottom:10px;
+	width:100%;
+}
+
+#body{
+	background:#f3f3f3;
+	height:2400px;
+	margin:8px;
+	width:800px;
+	margin:0 auto;
+	padding:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+}
+
+#footer{
+	background:gray;
+	height:300px;
+	margin-top:10px;
+	width:100%;
+}
+
+.scrollup {
+	position: fixed;
+	z-index:99999;
+	bottom: 10px;
+	right:100px;
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid #666;
+}
+
+.scrollup:hover {
+	border-bottom: 25px solid #333;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="header"></div>
+<div id="body">
+	<h1>sexyScroll</h1>
+</div>
+<div><a href="#" class="scrollup" title="Zum Seitenanfang" ></a></div>
+<div id="footer"></div>
+
+</body>
+</html>

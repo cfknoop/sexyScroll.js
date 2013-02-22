@@ -28,7 +28,7 @@ jQuery('.scrollup').sexyScroll({
 });	
 ```
 ## CSS.
-Following CSS should use for the toTop link:
+Following CSS should/could use for the toTop link:
 
 ```css
 .scrollup {
@@ -46,4 +46,3 @@ Following CSS should use for the toTop link:
 .scrollup:hover {
 	border-bottom: 25px solid #333;
 }
-});	
